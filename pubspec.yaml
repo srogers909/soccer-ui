@@ -31,6 +31,10 @@ dependencies:
   flutter:
     sdk: flutter
 
+  # Local utilities dependency
+  soccer_utilities:
+    path: ../utilities
+  
   # Local engine dependency
   soccer_engine:
     path: ../engine

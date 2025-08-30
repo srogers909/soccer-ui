@@ -627,6 +627,13 @@ packages:
       relative: true
     source: path
     version: "1.0.0"
+  soccer_utilities:
+    dependency: "direct main"
+    description:
+      path: "../utilities"
+      relative: true
+    source: path
+    version: "1.0.0+1"
   source_gen:
     dependency: transitive
     description:
