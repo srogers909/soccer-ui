@@ -1,4 +1,4 @@
-name: soccer_manager_ui
+name: tactics_fc_ui
 description: "A new Flutter project."
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
@@ -32,16 +32,16 @@ dependencies:
     sdk: flutter
 
   # Local utilities dependency
-  soccer_utilities:
-    path: ../utilities
+  tactics_fc_utilities:
+    path: ../tactics-fc-utilities
   
   # Local engine dependency
-  soccer_engine:
-    path: ../engine
+  tactics_fc_engine:
+    path: ../tactics-fc-engine
   
   # Local generator dependency
-  soccer_data_generator:
-    path: ../generator
+  tactics_fc_generator:
+    path: ../tactics-fc-generator
 
   # State management
   flutter_bloc: ^8.1.6

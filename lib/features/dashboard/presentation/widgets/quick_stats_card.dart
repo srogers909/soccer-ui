@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:soccer_engine/soccer_engine.dart' as engine;
+import 'package:tactics_fc_engine/soccer_engine.dart' as engine;
 
 class QuickStatsCard extends StatelessWidget {
   final engine.GameState gameState;

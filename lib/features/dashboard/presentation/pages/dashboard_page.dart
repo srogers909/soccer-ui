@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
-import 'package:soccer_engine/soccer_engine.dart' as engine;
+import 'package:tactics_fc_engine/soccer_engine.dart' as engine;
 
 import '../../../../core/utils/screen_utils.dart';
 import '../../../game/presentation/bloc/game_bloc.dart';

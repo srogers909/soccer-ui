@@ -1,4 +1,4 @@
-// This is a basic Flutter widget test for the Soccer Manager UI.
+// This is a basic Flutter widget test for the Tactics FC UI.
 //
 // To perform an interaction with a widget in your test, use the WidgetTester
 // utility in the flutter_test package. For example, you can send tap and scroll
@@ -8,12 +8,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:soccer_manager_ui/main.dart';
+import 'package:tactics_fc_ui/main.dart';
 
 void main() {
-  testWidgets('Soccer Manager app smoke test', (WidgetTester tester) async {
+  testWidgets('Tactics FC app smoke test', (WidgetTester tester) async {
     // Build our app and trigger a frame.
-    await tester.pumpWidget(SoccerManagerApp());
+    await tester.pumpWidget(TacticsFCApp());
 
     // Wait for the app to settle
     await tester.pumpAndSettle();
@@ -25,7 +25,7 @@ void main() {
 
   testWidgets('App should build without crashing', (WidgetTester tester) async {
     // Build our app and trigger a frame.
-    await tester.pumpWidget(SoccerManagerApp());
+    await tester.pumpWidget(TacticsFCApp());
 
     // Wait for the app to settle
     await tester.pumpAndSettle();

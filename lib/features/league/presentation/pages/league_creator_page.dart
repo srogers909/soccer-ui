@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
-import 'package:soccer_data_generator/soccer_data_generator.dart';
+import 'package:tactics_fc_generator/soccer_data_generator.dart';
 import '../bloc/league_generation_bloc.dart';
 
 class LeagueCreatorPage extends StatefulWidget {

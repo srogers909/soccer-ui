@@ -1,6 +1,6 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:equatable/equatable.dart';
-import 'package:soccer_engine/soccer_engine.dart' as engine;
+import 'package:tactics_fc_engine/soccer_engine.dart' as engine;
 
 // Events
 abstract class GameEvent extends Equatable {

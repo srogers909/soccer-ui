@@ -12,19 +12,25 @@ import 'features/transfers/presentation/pages/transfers_page.dart';
 import 'features/league/presentation/pages/league_page.dart';
 import 'features/league/presentation/pages/league_creator_page.dart';
 import 'features/finances/presentation/pages/finances_page.dart';
+import 'features/main_menu/presentation/pages/main_menu_page.dart';
 
 void main() {
-  runApp(SoccerManagerApp());
+  runApp(TacticsFCApp());
 }
 
-class SoccerManagerApp extends StatelessWidget {
-  SoccerManagerApp({super.key});
+class TacticsFCApp extends StatelessWidget {
+  TacticsFCApp({super.key});
 
   final GoRouter _router = GoRouter(
     initialLocation: '/',
     routes: [
       GoRoute(
         path: '/',
+        name: 'main-menu',
+        builder: (context, state) => const MainMenuPage(),
+      ),
+      GoRoute(
+        path: '/dashboard',
         name: 'dashboard',
         builder: (context, state) => const DashboardPage(),
       ),
@@ -73,7 +79,7 @@ class SoccerManagerApp extends StatelessWidget {
         ),
       ],
       child: MaterialApp.router(
-        title: 'Soccer Manager',
+        title: 'Tactics FC',
         theme: AppTheme.lightTheme,
         darkTheme: AppTheme.darkTheme,
         themeMode: ThemeMode.system,
