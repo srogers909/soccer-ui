@@ -15,8 +15,9 @@ void main() {
     // Build our app and trigger a frame.
     await tester.pumpWidget(TacticsFCApp());
 
-    // Wait for the app to settle
-    await tester.pumpAndSettle();
+    // Wait for initial render (avoiding infinite animations)
+    await tester.pump();
+    await tester.pump(Duration(milliseconds: 100));
 
     // Verify that the app loads successfully
     // The app should have some basic UI elements
@@ -27,8 +28,9 @@ void main() {
     // Build our app and trigger a frame.
     await tester.pumpWidget(TacticsFCApp());
 
-    // Wait for the app to settle
-    await tester.pumpAndSettle();
+    // Wait for initial render (avoiding infinite animations)
+    await tester.pump();
+    await tester.pump(Duration(milliseconds: 100));
 
     // The test passes if we get here without throwing
     expect(find.byType(MaterialApp), findsOneWidget);
